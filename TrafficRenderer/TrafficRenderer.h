@@ -1,14 +1,4 @@
-#pragma once
-#include <windows.h>
-#include <windowsx.h>
-#include <d3d9.h>
-#include <d3dx9.h>
-#include "../TrafficEngine/TrafficSettings.h"
-
-#pragma comment (lib, "d3d9.lib")
-#pragma comment (lib, "d3dx9.lib")
-#pragma comment (lib,"../TrafficEngine.lib")
-
+#include "TrafficSprite.h"
 #pragma once
 namespace Traffic {
 	class TrafficRenderer
@@ -19,8 +9,12 @@ namespace Traffic {
 		IDirect3DTexture9 *g_texture = NULL;
 	public:
 		TrafficRenderer();
+		//Rendering
 		void init(HWND hwnd);
 		void beginRender();
+		void endRender();
+		void releaseRender();
+		//Objects
 		~TrafficRenderer();
 	};
 }

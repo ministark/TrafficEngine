@@ -42,6 +42,20 @@ void Traffic::TrafficRenderer::beginRender()
 	d3ddev->SetTransform(D3DTS_PROJECTION, &matProj);
 }
 
+void Traffic::TrafficRenderer::endRender()
+{
+	// End Scene
+	d3ddev->EndScene();
+	d3ddev->Present(NULL, NULL, NULL, NULL);
+}
+
+void Traffic::TrafficRenderer::releaseRender()
+{
+	d3ddev->Release();
+	// Release the Direct3D
+	d3d->Release();
+}
+
 
 TrafficRenderer::~TrafficRenderer()
 {

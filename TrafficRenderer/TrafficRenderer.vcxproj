@@ -126,9 +126,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="TrafficRenderer.h" />
+    <ClInclude Include="TrafficSprite.h" />
+    <ClInclude Include="TrafficVertex.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrafficRenderer.cpp" />
+    <ClCompile Include="TrafficSprite.cpp" />
+    <ClCompile Include="TrafficVertex.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
