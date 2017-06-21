@@ -1,5 +1,5 @@
 #include "TrafficCar.h"
-
+using namespace Traffic;
 
 
 TrafficCar::TrafficCar()

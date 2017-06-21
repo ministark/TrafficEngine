@@ -1,8 +1,10 @@
 #pragma once
-class TrafficCar
-{
-public:
-	TrafficCar();
-	~TrafficCar();
-};
-
+namespace Traffic {
+	class TrafficCar
+	{
+	public:
+		float x, float y;
+		TrafficCar();
+		~TrafficCar();
+	};
+}
